@@ -1,1 +1,26 @@
-For wakemydyno.com
+:: ================================================
+:: Aktivasi Microsoft Office 2016 via KMS Server
+:: Copyright © 2025 by Fuuma. All rights reserved.
+:: ================================================
+
+@echo off
+cd /d "C:\Program Files\Microsoft Office\Office16"
+
+:: Masukkan product key KMS
+cscript OSPP.VBS /inpkey:FXYTK-NJJ8C-GB6DW-3DYQT-6F7TH
+
+:: Atur alamat server KMS
+cscript OSPP.VBS /sethst:kms.nbk.ngtech.co.il
+
+:: Jalankan aktivasi
+cscript OSPP.VBS /act
+
+:: Tampilkan status lisensi
+cscript OSPP.VBS /dstatusall
+
+echo.
+echo ================================================
+echo     Aktivasi selesai. Periksa status di atas.
+echo        Script by Fuuma - 2025
+echo ================================================
+pause
